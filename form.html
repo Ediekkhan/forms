@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My form</title>
+    <link rel="stylesheet" href="./fstyle.css">
+</head>
+<body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <div class="four">
+        <form action="#">
+            <div class="name">
+                <label for="name" >Name</label> <br>
+                <input type="text" id="name" placeholder="enter your name">
+            </div>
+            <div class="email">
+                <label for="email" >Email</label> <br>
+                <input type="email" id="email" placeholder="enter your email">
+            </div>
+            <div class="age">
+                <label for="age" >Age (Opitional):</label> <br>
+                <input type="number" id="age" placeholder="age">
+            </div>
+            <div class="role">
+                <label for="Which option best describes your current role?" >Which option best describes your current role?</label> <br>
+                
+                <select name="role"  id="role" > 
+                    <option disabled selected value="select a option" >select a Role</option>
+                    <option value="student">student</option>
+                    <option value="jobber">Full time jobber</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="prefer">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="recommend">
+                <label >Would you recommend freeCodeCamp to a friend?</label> <br> <br>
+                <input type="radio" id="def" >Definitely</input> <br>
+                <input type="radio" id="may" >Maybe</input> <br>
+                <input type="radio" id="not" >Not sure</input>
+            </div>
+            <div class="fav">
+                <label for="Which option best describes your current role?" >Which option best describes your current role?</label> <br>
+                    
+                <select name="fav"  id="fav" > 
+                    <option value="select">select an option </option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open">Open source</option>
+                </select>
+            </div>  
+            <div class="improved">
+                <label >What would you like to see improved? (Check all that apply)</label> <br>
+                <input type="checkbox" id="front">Front-end Projects</input> <br>
+                <input type="checkbox" id="back">Back-end Projects</input> <br>
+                <input type="checkbox" id="data">Data Visualization</input> <br>
+                <input type="checkbox" id="chall">Challenges</input> <br>
+                <input type="checkbox" id="open">Open Source Community</input> <br>
+                <input type="checkbox" id="help">Gitter help rooms</input> <br>
+                <input type="checkbox" id="vid">Videos</input> <br>
+                <input type="checkbox" id="meet">City Meetups</input> <br>
+                <input type="checkbox" id="wiki">Wiki</input> <br>
+                <input type="checkbox" id="forum">Forum</input> <br>
+                <input type="checkbox" id="Courses">Additional Courses</input> <br>
+            </div>
+            <div class="suggest">
+                <label for="Any comments or suggestions?">Any comments or suggestions?</label> <br>
+              <textarea name="suggest" id="suggest" cols="30" rows="10">Enter your comment here...</textarea> 
+            </div>
+            <div class="submit">
+             <input type="submit" id="submit"></input>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
